@@ -21,9 +21,8 @@ Create a ```largestNumber``` method that will return the largest number of the 2
  password1 = scanInput.nextLine();
 
  System.out.print("Enter new password again: ");
- scanInput = new Scanner(System.in);
  password2 = scanInput.nextLine();
 
-  System.out.println("Does passwords match? " + checkPassword(password1, password2));
+ System.out.println("Does passwords match? " + checkPassword(password1, password2));
 ```
 Create a ```checkPassword``` method that will return a boolean value 'true' if the passwordsmatch, otherwise return a boolean value of 'false' 
