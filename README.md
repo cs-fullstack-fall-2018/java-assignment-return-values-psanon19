@@ -14,15 +14,16 @@ Create a ```largestNumber``` method that will return the largest number of the 2
 ### Matching Password Checker
 # Given a main function: 
 ```java
-Scanner scanInput;
-String password1, password2= "";
+ Scanner scanInput = new Scanner(System.in);
+ String password1, password2= "";
 
-System.out.print("Enter your new password: ");
-password1 = scanInput.getNextLine();
+ System.out.print("Enter your new password: ");
+ password1 = scanInput.nextLine();
 
-System.out.print("Enter new password again: ");
-password2 = scanInput.getNextLine();
+ System.out.print("Enter new password again: ");
+ scanInput = new Scanner(System.in);
+ password2 = scanInput.nextLine();
 
-System.out.println("Does passwords match? " + checkPassword(pw1, pw2);
+  System.out.println("Does passwords match? " + checkPassword(password1, password2));
 ```
 Create a ```checkPassword``` method that will return a boolean value 'true' if the passwordsmatch, otherwise return a boolean value of 'false' 
